@@ -2,6 +2,7 @@
 FastAPI entry point for F1 Strategy Room backend.
 """
 from app.config import CORS_ORIGINS
+from app.routers import degradation, overtakes, races, strategy
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -19,6 +20,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include routers
+app.include_router(races.router)
+app.include_router(degradation.router)
+app.include_router(strategy.router)
+app.include_router(overtakes.router)
 
 
 @app.get("/")

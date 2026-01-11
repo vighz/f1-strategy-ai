@@ -88,8 +88,8 @@ f1-strategy-room/
 
 ## 🔄 Current State (Update This!)
 **Last Updated:** January 11, 2026
-**Working On:** Phase 2 - Backend Core (next up)
-**Recently Completed:** Phase 1 - Foundation (Git, Docker, FastF1, frontend structure)
+**Working On:** Phase 3 - Frontend Core (next up)
+**Recently Completed:** Phase 2 - Backend Core (all services and API endpoints)
 **Blocked By:** None
 
 ---
@@ -104,13 +104,13 @@ f1-strategy-room/
 - [x] Test data extraction for Monza 2023 (hero race)
 - [x] Set up local caching (parquet files)
 
-### Phase 2: Backend Core (Days 3-5)
-- [ ] Implement DegradationModel service (polynomial regression)
-- [ ] Implement StrategyEngine service (simulate & rank strategies)
-- [ ] Implement OvertakeAnalyzer service (zone identification)
-- [ ] Create all API endpoints (/api/degradation, /api/strategy, /api/overtakes, /api/races)
-- [ ] Add Pydantic schemas for request/response validation
-- [ ] Implement caching for computed results
+### Phase 2: Backend Core (Days 3-5) ✅
+- [x] Implement DegradationModel service (polynomial regression)
+- [x] Implement StrategyEngine service (simulate & rank strategies)
+- [x] Implement OvertakeAnalyzer service (zone identification)
+- [x] Create all API endpoints (/api/degradation, /api/strategy, /api/overtakes, /api/races)
+- [x] Add Pydantic schemas for request/response validation
+- [x] Implement caching for computed results
 
 ### Phase 3: Frontend Core (Days 6-9)
 - [ ] Set up Next.js with TypeScript + Tailwind
