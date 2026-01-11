@@ -271,7 +271,9 @@ The UI prominently displays these caveats:
 
 ## 🎥 Demo
 
-> **Live Demo:** [Coming Soon]
+**Live Demo:** https://f1-strategy-ai-lyart.vercel.app
+
+**Backend API:** https://f1-strategy-ai-oqtg.onrender.com/docs
 
 **Usage:**
 1. Select a race from the 2023 season grid
@@ -284,7 +286,17 @@ The UI prominently displays these caveats:
 
 ## 📸 Screenshots
 
-> Screenshots will be added after deployment
+### Race Selection
+![Race Selection](https://via.placeholder.com/800x400?text=Add+Screenshot+Here)
+*Select from 22 races in the 2023 F1 season*
+
+### Degradation Analysis
+![Degradation Chart](https://via.placeholder.com/800x400?text=Add+Screenshot+Here)
+*Polynomial regression curves showing tyre degradation by compound*
+
+### Strategy Ranking
+![Strategy Ranking](https://via.placeholder.com/800x400?text=Add+Screenshot+Here)
+*Top 5 optimal strategies with stint breakdowns and time deltas*
 
 ---
 
