@@ -18,7 +18,9 @@ FASTF1_CACHE_DIR = str(CACHE_DIR)
 # API Configuration
 API_HOST = os.getenv("API_HOST", "0.0.0.0")
 API_PORT = int(os.getenv("API_PORT", "8000"))
-CORS_ORIGINS = os.getenv("CORS_ORIGINS", "http://localhost:3000").split(",")
+CORS_ORIGINS = os.getenv(
+    "CORS_ORIGINS", "http://localhost:3000,http://localhost:3001,http://localhost:3002"
+).split(",")
 
 # F1 Constants
 PIT_LOSS = {
