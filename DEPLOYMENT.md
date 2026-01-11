@@ -45,7 +45,7 @@ Click **"Advanced"** → **"Add Environment Variable"**
 Add these variables:
 | Key | Value |
 |-----|-------|
-| `PYTHON_VERSION` | `3.11` |
+| `PYTHON_VERSION` | `3.11.0` |
 | `CORS_ORIGINS` | `https://your-frontend-url.vercel.app` (update after frontend deployment) |
 
 **Note:** You'll update `CORS_ORIGINS` after deploying the frontend in Part 2.
