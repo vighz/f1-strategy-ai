@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: f1-strategy-room-api
+    env: python
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: CORS_ORIGINS
+        sync: false
+    rootDir: backend
