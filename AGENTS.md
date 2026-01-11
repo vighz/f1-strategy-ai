@@ -88,8 +88,8 @@ f1-strategy-room/
 
 ## 🔄 Current State (Update This!)
 **Last Updated:** January 11, 2026
-**Working On:** Phase 3 - Frontend Core (next up)
-**Recently Completed:** Phase 2 - Backend Core (all services and API endpoints)
+**Working On:** Phase 4 - Polish & Deploy (next up)
+**Recently Completed:** Phase 3 - Frontend Core (React components, API integration, data visualization)
 **Blocked By:** None
 
 ---
@@ -112,15 +112,16 @@ f1-strategy-room/
 - [x] Add Pydantic schemas for request/response validation
 - [x] Implement caching for computed results
 
-### Phase 3: Frontend Core (Days 6-9)
-- [ ] Set up Next.js with TypeScript + Tailwind
-- [ ] Create API client (lib/api.ts)
-- [ ] Build RaceSelector component
-- [ ] Build DegradationChart component (Recharts)
-- [ ] Build StrategyRanking component
-- [ ] Build PitWindowChart component
-- [ ] Build OvertakeMap component (track visualization)
-- [ ] Build BacktestDisplay component
+### Phase 3: Frontend Core (Days 6-9) ✅
+- [x] Set up Next.js with TypeScript + Tailwind
+- [x] Create API client (lib/api.ts)
+- [x] Build RaceSelector component
+- [x] Build DegradationChart component (Recharts)
+- [x] Build StrategyRanking component
+- [x] Integrated all components in main page with loading/error states
+- [ ] Build PitWindowChart component (deferred to Phase 4)
+- [ ] Build OvertakeMap component (deferred to Phase 4)
+- [ ] Build BacktestDisplay component (deferred to Phase 4)
 
 ### Phase 4: Polish & Deploy (Days 10-14)
 - [ ] Apply dark theme + F1 styling
