@@ -88,8 +88,8 @@ f1-strategy-room/
 
 ## 🔄 Current State (Update This!)
 **Last Updated:** January 11, 2026
-**Working On:** Phase 4 - Polish & Deploy (next up)
-**Recently Completed:** Phase 3 - Frontend Core (React components, API integration, data visualization)
+**Working On:** Deployment to Render + Vercel (manual)
+**Recently Completed:** Phase 4 - Polish & Deploy (README, deployment configs, CORS fix, full testing)
 **Blocked By:** None
 
 ---
@@ -123,15 +123,19 @@ f1-strategy-room/
 - [ ] Build OvertakeMap component (deferred to Phase 4)
 - [ ] Build BacktestDisplay component (deferred to Phase 4)
 
-### Phase 4: Polish & Deploy (Days 10-14)
-- [ ] Apply dark theme + F1 styling
-- [ ] Add loading states and error handling
-- [ ] Display model caveats/limitations in UI
-- [ ] Deploy backend to Render
-- [ ] Deploy frontend to Vercel
-- [ ] Create README with setup instructions
-- [ ] Record 2-3 minute demo video
-- [ ] Take screenshots for portfolio
+### Phase 4: Polish & Deploy (Days 10-14) ⚡ In Progress
+- [x] Apply dark theme + F1 styling (completed in Phase 3)
+- [x] Add loading states and error handling (completed in Phase 3)
+- [x] Display model caveats/limitations in UI (completed in Phase 3)
+- [x] Fix CORS for multiple frontend ports
+- [x] Create comprehensive README with architecture, ML approach, deployment
+- [x] Create DEPLOYMENT.md with step-by-step Render + Vercel guide
+- [x] Create render.yaml and vercel.json deployment configs
+- [ ] Deploy backend to Render (manual - follow DEPLOYMENT.md)
+- [ ] Deploy frontend to Vercel (manual - follow DEPLOYMENT.md)
+- [ ] Take screenshots for portfolio (after deployment)
+- [ ] Update README with live URLs (after deployment)
+- [ ] Record 2-3 minute demo video (optional)
 
 ---
 
