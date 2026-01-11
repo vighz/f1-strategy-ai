@@ -28,12 +28,14 @@ This guide walks through deploying F1 Strategy Room to Render (backend) and Verc
 - **Name:** `f1-strategy-room-api` (or your choice)
 - **Region:** `Oregon (US West)` (or closest to you)
 - **Branch:** `master` (or `main`)
-- **Root Directory:** `backend`
+- **Root Directory:** `backend` ⚠️ **IMPORTANT: Must be set!**
 - **Runtime:** `Python 3`
 
 **Build & Start Commands:**
 - **Build Command:** `pip install -r requirements.txt`
 - **Start Command:** `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+
+**⚠️ CRITICAL:** Verify the **Root Directory** is set to `backend` before deploying. If it's blank or set to the repo root, the deployment will fail with "ModuleNotFoundError: No module named 'app'".
 
 **Instance Type:**
 - **Free** (for portfolio/demo purposes)

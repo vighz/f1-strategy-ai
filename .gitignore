@@ -74,3 +74,12 @@ logs/
 
 # OS
 Thumbs.db
+
+# AI/Agent Development Files (keep local only)
+AGENTS.md
+CLAUDE.md
+agent_docs/
+docs/
+.claude/
+PHASE1_TEST_RESULTS.md
+src/
