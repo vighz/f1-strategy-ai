@@ -1,11 +1,11 @@
 # AGENTS.md - Master Plan for F1 Strategy Room
 
 ## 🎯 Project Overview
-**App:** F1 Strategy Room  
-**Tagline:** Turn F1 telemetry into race-winning strategy insights—in minutes, not hours  
-**Stack:** FastAPI (Python) + Next.js (TypeScript)  
-**Timeline:** 2 weeks  
-**Budget:** $0 (free tiers only)  
+**App:** F1 Strategy Room
+**Tagline:** Turn F1 telemetry into race-winning strategy insights—in minutes, not hours
+**Stack:** FastAPI (Python) + Next.js (TypeScript)
+**Timeline:** 2 weeks
+**Budget:** $0 (free tiers only)
 **Current Phase:** Phase 1 - Foundation
 
 ---
@@ -87,22 +87,22 @@ f1-strategy-room/
 ---
 
 ## 🔄 Current State (Update This!)
-**Last Updated:** January 10, 2026  
-**Working On:** Project initialization  
-**Recently Completed:** Planning documents  
+**Last Updated:** January 11, 2026
+**Working On:** Phase 2 - Backend Core (next up)
+**Recently Completed:** Phase 1 - Foundation (Git, Docker, FastF1, frontend structure)
 **Blocked By:** None
 
 ---
 
 ## 🚀 Roadmap
 
-### Phase 1: Foundation (Days 1-2)
-- [ ] Initialize Git repo
-- [ ] Set up Docker Compose for backend + frontend
-- [ ] Install FastF1 and verify data fetching
-- [ ] Create FastF1 client service
-- [ ] Test data extraction for Monza 2023 (hero race)
-- [ ] Set up local caching (parquet files)
+### Phase 1: Foundation (Days 1-2) ✅
+- [x] Initialize Git repo
+- [x] Set up Docker Compose for backend + frontend
+- [x] Install FastF1 and verify data fetching
+- [x] Create FastF1 client service
+- [x] Test data extraction for Monza 2023 (hero race)
+- [x] Set up local caching (parquet files)
 
 ### Phase 2: Backend Core (Days 3-5)
 - [ ] Implement DegradationModel service (polynomial regression)

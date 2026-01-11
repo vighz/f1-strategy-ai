@@ -1,0 +1,28 @@
+# FastAPI and server
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# FastF1 for telemetry data
+fastf1==3.3.6
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine learning / stats
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+httpx==0.26.0
+
+# Code quality
+black==23.12.1
+flake8==7.0.0
+isort==5.13.2
+
+# Environment
+python-dotenv==1.0.0
