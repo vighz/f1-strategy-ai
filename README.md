@@ -307,6 +307,7 @@ The UI prominently displays these caveats:
 - **Full-stack TypeScript/Python** integration with FastAPI + Next.js
 - **Real-world ML application** with regression, validation, and visualization
 - **Production-ready architecture** with Docker, CORS, error handling
+- **Memory-optimized deployment** - selective data loading to run within 512MB Render free tier
 - **Data engineering** with time series processing and feature extraction
 - **Domain-specific modeling** using F1 racing physics and constraints
 
