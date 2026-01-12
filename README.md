@@ -341,8 +341,8 @@ This is a portfolio project, but feedback is welcome! Feel free to:
 
 ## 📝 License
 
-Private portfolio project - Not for commercial use
+MIT License - Free to view and reference for educational/portfolio purposes
 
 ---
 
-**Built with ☕ by [Your Name] | [LinkedIn](your-linkedin) | [Portfolio](your-portfolio)**
+**Built with ☕ by Vighnesh Prabhu**
