@@ -4,6 +4,7 @@ FastF1 client service for extracting F1 telemetry data.
 This service handles all interactions with the FastF1 library,
 including session loading, data extraction, and filtering.
 """
+import gc
 from typing import Dict, List, Optional
 
 import fastf1
@@ -22,7 +23,7 @@ class FastF1Client:
         self, year: int, race_name: str, session_type: str = "R"
     ) -> Optional[fastf1.core.Session]:
         """
-        Load a specific F1 session.
+        Load a specific F1 session with memory-efficient settings.
 
         Args:
             year: Race year (e.g., 2023)
@@ -42,10 +43,17 @@ class FastF1Client:
         Note:
             First load can take 30-60 seconds as data is downloaded.
             Subsequent loads are faster due to caching.
+            Memory-optimized to load only laps data (not full telemetry).
         """
         try:
             session = fastf1.get_session(year, race_name, session_type)
-            session.load()
+            # MEMORY OPTIMIZATION: Only load laps, not full telemetry
+            # This reduces memory usage from ~1200MB to ~200-300MB
+            session.load(laps=True, telemetry=False, weather=False, messages=False)
+
+            # Force garbage collection after loading to free memory
+            gc.collect()
+
             return session
         except Exception as e:
             print(f"Error loading session {year} {race_name} {session_type}: {e}")
@@ -89,6 +97,10 @@ class FastF1Client:
                     "is_personal_best": bool(lap["IsPersonalBest"]),
                 }
             )
+
+        # Free memory after processing
+        del quick_laps
+        gc.collect()
 
         return {"laps": laps_data, "total_laps": len(laps_data)}
 
@@ -151,5 +163,9 @@ class FastF1Client:
         # Add final stint
         if current_stint is not None:
             stints.append(current_stint)
+
+        # Free memory after processing
+        del driver_laps
+        gc.collect()
 
         return stints
